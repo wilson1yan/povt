@@ -35,6 +35,7 @@ class POVT(nn.Module):
         self.n_codes = [2, args.n_quantize_values, args.n_quantize_values, self.vqvae.n_codes[0]]
         self.input_dims = [2, args.n_quantize_values, args.n_quantize_values, 
                            self.vqvae.embedding_dim, args.glimpse_hiddens]
+        print(self.n_obj, self.vqvae.latent_shape)
         self.seq_per_T = self.n_obj * 5 + np.prod(self.vqvae.latent_shape)
 
         self.glimpse_encoder = Encoder(args.glimpse_hiddens, args.glimpse_layers,

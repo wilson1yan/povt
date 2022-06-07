@@ -6,8 +6,8 @@ batch_size: 8
 num_workers: 4
 lr: 0.001
 total_steps: 200000
-test_interval: 5000
-eval_interval: 5000
+test_interval: 1000
+eval_interval: 1000
 log_interval: 100
 log_train: true
 
@@ -24,7 +24,7 @@ n_cond_obj: 7
 
 # Model
 model: "povt"
-vqvae_ckpt: "/PATH/TO/VQVAE/CHECKPOINT"
+vqvae_ckpt: "/home/wilson/logs/ocl/cater_cam_vqvae_1654574298.3614101/checkpoints/checkpoint.pth.tar"
 ar_block_size: 1
 hidden_dim: 512
 heads: 4

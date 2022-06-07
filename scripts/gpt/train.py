@@ -14,13 +14,13 @@ import torch.nn as nn
 import torch.distributed as dist
 from torch.cuda.amp import GradScaler, autocast
 
-from ocl.data import Data, cycle
-from ocl.train_utils import save_checkpoint, seed_all, compute_total_params, \
+from povt.data import Data, cycle
+from povt.train_utils import save_checkpoint, seed_all, compute_total_params, \
     ProgressMeter
-from ocl.dist_ops import is_master_process, DistributedDataParallel, \
+from povt.dist_ops import is_master_process, DistributedDataParallel, \
     get_size, all_reduce_avg_dict, all_gather
-from ocl.models import get_model
-from ocl.utils import save_video_grid
+from povt.models import get_model
+from povt.utils import save_video_grid
 
 from warmup_scheduler import GradualWarmupScheduler
 
@@ -63,7 +63,7 @@ def main(save_dir):
         root_dir = os.environ['OCL_DATA_DIR']
         os.makedirs(osp.join(root_dir, 'wandb'), exist_ok=True)
 
-        wandb.init(project='ocl', config=args,
+        wandb.init(project='povt', config=args,
                    dir=root_dir)
         wandb.run.name = osp.basename(args.output_dir)
         wandb.run.save()

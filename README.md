@@ -18,7 +18,7 @@ Example dataset video can be visualized with `scripts/visualize_dataset.py`
 ## CATER-CAM
 Download CATER (with masks) from the [Deepmind Multi-Object Dataset](https://github.com/deepmind/multi_object_datasets). 
 
-To convert it to HDF5 format, run `python data_gen/cater_cam/cater_cam_to_hdf5 /PATH/TO/DATASET`
+To convert it to HDF5 format, run `python data_gen/cater_cam/cater_cam_to_hdf5.py /PATH/TO/DATASET`
 
 Then, to compute bounding boxes, run `python data_gen/cater_cam/compute_cater_cam_bboxes.py -d data/cater_cam.hdf5`
 

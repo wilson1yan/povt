@@ -1,8 +1,8 @@
 import argparse
 from tqdm import tqdm
 import torch
-from ocl.data import Data
-from ocl.utils import save_video_grid, view_range, extract_glimpses, \
+from povt.data import Data
+from povt.utils import save_video_grid, view_range, extract_glimpses, \
     bbox_norm_to_image, quantize_bboxes
 
 

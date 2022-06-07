@@ -10,3 +10,4 @@ wandb
 lpips
 git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git
 tensorflow==1.14
+pyyaml==5.3.1

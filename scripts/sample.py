@@ -3,10 +3,10 @@ import numpy as np
 import os.path as osp
 import argparse
 import pickle
-from ocl.models import get_model
-from ocl.data import Data
-from ocl.train_utils import seed_all
-from ocl.utils import save_video_grid, bbox_norm_to_image
+from povt.models import get_model
+from povt.data import Data
+from povt.train_utils import seed_all
+from povt.utils import save_video_grid, bbox_norm_to_image
 
 def draw_bbox(obs, tl_r, tl_c, br_r, br_c, color):
     # in-place operation

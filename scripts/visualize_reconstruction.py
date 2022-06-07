@@ -3,9 +3,9 @@ import os
 import os.path as osp
 import argparse
 import pickle
-from ocl.models import get_model
-from ocl.data import Data
-from ocl.utils import view_range, save_video_grid
+from povt.models import get_model
+from povt.data import Data
+from povt.utils import view_range, save_video_grid
 
 
 parser = argparse.ArgumentParser()
