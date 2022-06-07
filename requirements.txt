@@ -1,0 +1,12 @@
+moviepy
+opencv-python
+av
+scikit-video
+scikit-image
+argparse
+tqdm
+h5py
+wandb
+lpips
+git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git
+tensorflow==1.14

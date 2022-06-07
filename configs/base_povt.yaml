@@ -1,0 +1,42 @@
+seed: 1
+no_output: false
+
+# Training
+batch_size: 8
+num_workers: 4
+lr: 0.001
+total_steps: 200000
+test_interval: 5000
+eval_interval: 5000
+log_interval: 100
+log_train: true
+
+# Data
+data_path: "data/cater_cam.hdf5"
+eval_sequence_length: 16
+sequence_length: 16
+resolution: 64
+grad_clip_norm: 1
+mixed_precision: false
+n_timesteps_gen: 16
+n_cond_base: 1
+n_cond_obj: 7
+
+# Model
+model: "povt"
+vqvae_ckpt: "/PATH/TO/VQVAE/CHECKPOINT"
+ar_block_size: 1
+hidden_dim: 512
+heads: 4
+layers: 8
+dropout: 0.2
+attn_type: "full"
+attn_dropout: 0.2
+
+bbox_shape: [2, 2]
+n_quantize_values: 64
+
+glimpse_hiddens: 128
+glimpse_layers: 1
+glimpse_downsample: 8
+glimpse_size: 16

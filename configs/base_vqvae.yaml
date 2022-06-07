@@ -1,0 +1,29 @@
+# Base config for experiments
+# NOTE: does NOT include output_dir or ckpt
+
+seed: 1
+no_output: false
+
+# Training
+batch_size: 128
+num_workers: 8
+lr: 0.0007
+total_steps: 200000
+test_interval: 5000
+eval_interval: 5000
+log_interval: 100
+log_train: true
+
+# Data
+data_path: "data/cater_cam.hdf5"
+sequence_length: 1
+resolution: 64
+grad_clip_norm: 1
+
+# Model
+model: "vqvae"
+embedding_dim: 128
+n_codes: 1024
+n_hiddens: 256
+n_res_layers: 2
+downsample: [4, 4]

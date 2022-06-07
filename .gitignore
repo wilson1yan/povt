@@ -1,0 +1,11 @@
+data/
+logs/
+*.npy
+*.idea
+*.mp4
+*.png
+*.gif
+*.pt
+*.DS_Store
+__pycache__/
+*.egg-info
