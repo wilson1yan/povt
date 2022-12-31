@@ -28,7 +28,7 @@ We [use a modified version of the original CATER repo](https://github.com/wilson
 To convert it to HDF5 format, run `python data_gen/cater_mov_to_hdf5.py -d /PATH/TO/cater_mov` to produce `cater_mov.hdf5`
 
 ## Something-Something V2
-We [use a modified version of the original SORT repo](https://github.com/abewley/sort). Please follow the steps below:
+We [use a modified version of the original SORT repo](https://github.com/wilson1yan/sort). Please follow the steps below:
 
 1. Download Something-Something V2 found [here]() into a folder `povt/data/something-something`
 2. `cd povt/data/something-something` and extract data files with `cat 20bn-something-something-v2-?? | tar zx`
