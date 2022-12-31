@@ -13,6 +13,12 @@ pip install -e .
 ```
 
 # Datasets
+You can download each dataset from the following links (you may need to `pip install internetarchive`)
+- CATER-CAM: [link](https://archive.org/details/povt_cater_cam)
+- CATER-MOV: [link](https://archive.org/details/povt_cater_mov)
+- MOVi: [link](https://archive.org/details/povt_movi)
+- SSv2 (with bboxes): [link](https://archive.org/details/povt_ssv2)
+
 Example dataset video can be visualized with `scripts/visualize_dataset.py`
 
 ## CATER-CAM
